@@ -19,9 +19,6 @@ pipeline {
       }
     }
     stage('Update Environment') {
-      when {
-        branch 'develop'
-      }
       steps {
         container('maven') {
           dir('env') {
